@@ -3976,20 +3976,20 @@ namespace BizHawk.Client.EmuHawk
 			}
 			else if (Emulator.HasSaveRam())
 			{
-				while (true)
-				{
-					if (FlushSaveRAM()) break;
-
-					var result = ShowMessageBox3(
-						owner: this,
-						"Failed flushing the game's Save RAM to your disk.\n" +
-						"Do you want to try again?",
-						"IOError while writing SaveRAM",
-						EMsgBoxIcon.Error);
-
-					if (result is false) break;
-					if (result is null) return;
-				}
+				// while (true)
+				// {
+				// 	if (FlushSaveRAM()) break;
+				//
+				// 	var result = ShowMessageBox3(
+				// 		owner: this,
+				// 		"Failed flushing the game's Save RAM to your disk.\n" +
+				// 		"Do you want to try again?",
+				// 		"IOError while writing SaveRAM",
+				// 		EMsgBoxIcon.Error);
+				//
+				// 	if (result is false) break;
+				// 	if (result is null) return;
+				// }
 			}
 
 			StopAv();
