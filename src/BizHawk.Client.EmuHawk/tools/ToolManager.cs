@@ -710,17 +710,17 @@ namespace BizHawk.Client.EmuHawk
 			// Hard stuff as we need a proxy object that inherit from MarshalByRefObject.
 			if (toolType == typeof(IExternalToolForm))
 			{
-				if (!skipExtToolWarning)
-				{
-					if (!_owner.ShowMessageBox2(
-						caption: "Confirm loading",
-						icon: EMsgBoxIcon.Question,
-						text: "Trust this external tool to run on your device?"
-							+ "\nIf you're not 100% sure of what the tool will do, choose \"No\"."))
-					{
-						return null;
-					}
-				}
+				// if (!skipExtToolWarning)
+				// {
+				// 	if (!_owner.ShowMessageBox2(
+				// 		caption: "Confirm loading",
+				// 		icon: EMsgBoxIcon.Question,
+				// 		text: "Trust this external tool to run on your device?"
+				// 			+ "\nIf you're not 100% sure of what the tool will do, choose \"No\"."))
+				// 	{
+				// 		return null;
+				// 	}
+				// }
 
 				try
 				{

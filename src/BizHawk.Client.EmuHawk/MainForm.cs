@@ -3967,14 +3967,14 @@ namespace BizHawk.Client.EmuHawk
 			}
 			else if (Emulator.HasSaveRam())
 			{
-				TryAgainResult flushResult = this.DoWithTryAgainBox(
-					() => FlushSaveRAM(),
-					"Failed flushing the game's Save RAM to your disk.");
-				if (flushResult == TryAgainResult.Canceled) return false;
+				// TryAgainResult flushResult = this.DoWithTryAgainBox(
+				// 	() => FlushSaveRAM(),
+				// 	"Failed flushing the game's Save RAM to your disk.");
+				// if (flushResult == TryAgainResult.Canceled) return false;
 			}
 
-			TryAgainResult stateSaveResult = this.DoWithTryAgainBox(AutoSaveStateIfConfigured, "Failed to auto-save state.");
-			if (stateSaveResult == TryAgainResult.Canceled) return false;
+			// TryAgainResult stateSaveResult = this.DoWithTryAgainBox(AutoSaveStateIfConfigured, "Failed to auto-save state.");
+			// if (stateSaveResult == TryAgainResult.Canceled) return false;
 
 			StopAv();
 
